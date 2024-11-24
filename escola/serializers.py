@@ -45,6 +45,12 @@ class EstudanteSerializer(serializers.ModelSerializer):
         return data
 
 
+class EstudanteSerializerV2(serializers.ModelSerializer):
+    class Meta:
+        model = Estudante
+        fields = ['id', 'nome', 'email', 'celular']
+
+
 class CursoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Curso
