@@ -19,6 +19,6 @@ def celular_invalido(celular):
     # return not len(celular) == 13
 
     # padrão ==> XX XXXXX-XXXX
-    modelo = '\d{2} \d{5}-\d{4}'
+    modelo = r'\d{2} \d{5}-\d{4}'
     resposta = re.findall(modelo, celular)
     return not len(celular) == 13 or not resposta
