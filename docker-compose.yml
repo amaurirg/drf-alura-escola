@@ -3,6 +3,8 @@ services:
     container_name: drf-escola
     build:
       context: .
+    volumes:
+      - .:/code
     ports:
       - "8008:8008"
 #    restart: always
